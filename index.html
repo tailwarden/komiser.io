@@ -1,155 +1,370 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-	<title>Komiser - AWS Environment Inspector</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>Komiser - Cloud Inspector Tool</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	 crossorigin="anonymous">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-	
-	
-	<div class="bg-g1 size1 flex-w flex-col-c-sb p-l-15 p-r-15 p-t-55 p-b-35 respon1">
-		<span></span>
-		<div class="flex-col-c p-t-50 p-b-50">
-			<h3 class="l1-txt1 txt-center p-b-10">
-				Coming Soon
-			</h3>
 
-			<p class="txt-center l1-txt2 p-b-60">
-				Our website is under construction
-			</p>
-
-			<div class="flex-w flex-c cd100 p-b-82">
-				<div class="flex-col-c-m size2 how-countdown">
-					<span class="l1-txt3 p-b-9 days">30</span>
-					<span class="s1-txt1">Days</span>
-				</div>
-
-				<div class="flex-col-c-m size2 how-countdown">
-					<span class="l1-txt3 p-b-9 hours">17</span>
-					<span class="s1-txt1">Hours</span>
-				</div>
-
-				<div class="flex-col-c-m size2 how-countdown">
-					<span class="l1-txt3 p-b-9 minutes">50</span>
-					<span class="s1-txt1">Minutes</span>
-				</div>
-
-				<div class="flex-col-c-m size2 how-countdown">
-					<span class="l1-txt3 p-b-9 seconds">39</span>
-					<span class="s1-txt1">Seconds</span>
+	<!--================Home Banner Area =================-->
+	<section class="home_banner_area">
+		<div class="banner_inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="banner_content">
+							<h2>
+								Komiser
+								<br> Cloud Environment Inspector
+							</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								Ut enim ad minim. sed do eiusmod tempor incididunt.
+							</p>
+							<div class="d-flex align-items-center">
+								<a class="primary_btn" href="#">
+									<span>Get Started</span>
+								</a>
+								<a id="play-home-video" class="video-play-button" href="https://www.youtube.com/watch?time_continue=2&v=J9YzcEe29d0">
+									<span></span>
+								</a>
+								<div class="watch_video text-uppercase">
+									watch the video
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-7">
+						<div class="home_right_img">
+							<img class="img-fluid" src="img/banner/home-right.png" alt="">
+						</div>
+					</div>
 				</div>
 			</div>
-
-			<button class="flex-c-m s1-txt2 size3 how-btn"  data-toggle="modal" data-target="#subscribe">
-				Follow us for update now!
-			</button>
 		</div>
+	</section>
+	<!--================End Home Banner Area =================-->
 
-		<span class="s1-txt3 txt-center">
-			@ 2018 Komiser. Designed by Mohamed Labouardy
-		</span>
-		
-	</div>
-
-	<!-- Modal Login -->
-	<div class="modal fade" id="subscribe" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog" role="document" data-dismiss="modal">
-			<div class="modal-subscribe where1-parent bg0 bor2 size4 p-t-54 p-b-100 p-l-15 p-r-15">
-				<button class="btn-close-modal how-btn2 fs-26 where1 trans-04">
-					<i class="zmdi zmdi-close"></i>
-				</button>
-
-				<div class="wsize1 m-lr-auto">
-					<h3 class="m1-txt1 txt-center p-b-36">
-						<span class="bor1 p-b-6">Subscribe</span>
-					</h3>
-
-					<p class="m1-txt2 txt-center p-b-40">
-						Follow us for update now!
-					</p>
-
-					<form class="contact100-form validate-form">
-						<div class="wrap-input100 m-b-10 validate-input" data-validate = "Name is required">
-							<input class="s1-txt4 placeholder0 input100" type="text" name="name" placeholder="Name">
-							<span class="focus-input100"></span>
-						</div>
-
-						<div class="wrap-input100 m-b-20 validate-input" data-validate = "Email is required: ex@abc.xyz">
-							<input class="s1-txt4 placeholder0 input100" type="text" name="email" placeholder="Email">
-							<span class="focus-input100"></span>
-						</div>
-
-						<div class="w-full">
-							<button class="flex-c-m s1-txt2 size5 how-btn1 trans-04">
-								Get Updates
-							</button>
-						</div>
-					</form>
-
-					<p class="s1-txt5 txt-center wsize2 m-lr-auto p-t-20">
-						And don’t worry, we hate spam too! You can unsubcribe at anytime.
-					</p>
+	<!--================Start Features Area =================-->
+	<section class="section_gap features_area">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8 text-center">
+					<div class="main_title">
+						<p class="top_title">Exclusive Stunning Features</p>
+						<h2>A Complete Software Based Website</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+							aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+						<a href="#" class="primary_btn">
+							<span>Start Free Trial Now!</span>
+						</a>
+					</div>
 				</div>
 			</div>
-
+			<div class="row align-items-center">
+				<div class="col-lg-6">
+					<div class="left_features">
+						<img class="img-fluid" src="img/f-img.png" alt="">
+					</div>
+				</div>
+				<div class="col-lg-5 offset-lg-1">
+					<!-- single features -->
+					<div class="single_feature">
+						<div class="feature_head">
+							<span class="lnr lnr-screen"></span>
+							<h4>Stunning Visuals</h4>
+						</div>
+						<div class="feature_content">
+							<p>Here, I focus on a range of items and features that we use in life without giving them a second thought such as Coca
+								Cola.
+							</p>
+						</div>
+					</div>
+					<!-- single features -->
+					<div class="single_feature">
+						<div class="feature_head">
+							<span class="lnr lnr-screen"></span>
+							<h4>Stunning Visuals</h4>
+						</div>
+						<div class="feature_content">
+							<p>Here, I focus on a range of items and features that we use in life without giving them a second thought such as Coca
+								Cola.
+							</p>
+						</div>
+					</div>
+					<!-- single features -->
+					<div class="single_feature">
+						<div class="feature_head">
+							<span class="lnr lnr-screen"></span>
+							<h4>Stunning Visuals</h4>
+						</div>
+						<div class="feature_content">
+							<p>Here, I focus on a range of items and features that we use in life without giving them a second thought such as Coca
+								Cola.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div>
+	</section>
+	<!--================End Features Area =================-->
 
-	
+	<!--================Start Big Features Area =================-->
+	<section class="section_gap big_features">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8 text-center">
+					<div class="main_title">
+						<p class="top_title">Features Specifications</p>
+						<h2>Amazing Features That make it Awesome!</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+							aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row features_content">
+				<div class="col-lg-4 offset-lg-1">
+					<div class="big_f_left">
+						<img class="img-fluid" src="img/cost.png" alt="">
+					</div>
+				</div>
+				<div class="col-lg-4 offset-lg-2">
+					<div class="common_style">
+						<p class="line">Modern Daesign Trends</p>
+						<h3>We Believe that
+							<br /> Inner beauty Lasts Long</h3>
+						<p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially
+							in the workplace. That’s why it’s crucial that as women.</p>
+						<a class="primary_btn" href="#">
+							<span>Learn More</span>
+						</a>
+					</div>
+				</div>
+				<div class="border-line"></div>
+				<img class="shape1" src="img/shape1.png" alt="">
+				<img class="shape2" src="img/shape2.png" alt="">
+				<img class="shape3" src="img/shape1.png" alt="">
+			</div>
 
-<!--===============================================================================================-->	
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/countdowntime/moment.min.js"></script>
-	<script src="vendor/countdowntime/moment-timezone.min.js"></script>
-	<script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-	<script>
-		$('.cd100').countdown100({
-			// Set Endtime here
-			// Endtime must be > current time
-			endtimeYear: 0,
-			endtimeMonth: 0,
-			endtimeDate: 30,
-			endtimeHours: 18,
-			endtimeMinutes: 0,
-			endtimeSeconds: 0,
-			timeZone: "" 
-			// ex:  timeZone: "America/New_York", can be empty
-			// go to " http://momentjs.com/timezone/ " to get timezone
-		});
-	</script>
-<!--===============================================================================================-->
-	<script src="vendor/tilt/tilt.jquery.min.js"></script>
-	<script >
-		$('.js-tilt').tilt({
-			scale: 1.1
-		})
-	</script>
-<!--===============================================================================================-->
-	<script src="js/main.js"></script>
+			<div class="row features_content bottom-features">
+				<div class="col-lg-5">
+					<div class="common_style">
+						<p class="line">Modern Daesign Trends</p>
+						<h3>We Believe that
+							<br /> Inner beauty Lasts Long</h3>
+						<p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially
+							in the workplace. That’s why it’s crucial that as women.</p>
+						<a class="primary_btn" href="#">
+							<span>Learn More</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-5 offset-lg-2">
+					<div class="big_f_left">
+						<img class="img-fluid" src="img/security.png" alt="">
+					</div>
+				</div>
+				<div class="border-line"></div>
+				<img class="shape1" src="img/shape1.png" alt="">
+				<img class="shape2" src="img/shape2.png" alt="">
+				<img class="shape3" src="img/shape1.png" alt="">
+			</div>
+		</div>
+	</section>
+	<!--================End Big Features Area =================-->
 
+	<!--================Srart Pricing Area =================-->
+	<section class="price_area section_gap">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8 text-center">
+					<div class="main_title">
+						<p class="top_title">Features Specifications</p>
+						<h2>Amazing Features That make it Awesome!</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+							aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+					</div>
+				</div>
+			</div>
+			<div class="price_inner row justify-content-center">
+				<div class="col-lg-4 col-md-6">
+					<div class="price_item">
+						<div class="price_head">
+							<h4>Essentials</h4>
+						</div>
+						<div class="price_body">
+							<ul class="list">
+								<li>
+									<a href="#">2.5 GB Space</a>
+								</li>
+								<li>
+									<a href="#">Secure Online Transfer</a>
+								</li>
+								<li>
+									<a href="#">Unlimited Styles</a>
+								</li>
+								<li>
+									<a href="#">Customer Service</a>
+								</li>
+							</ul>
+						</div>
+						<div class="price_footer">
+							<h3>
+								<span class="dlr">$</span> 0</h3>
+							<a class="primary_btn" href="#">
+								<span>Get Started</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="price_item">
+						<div class="price_head">
+							<h4>Entreprise</h4>
+						</div>
+						<div class="price_body">
+							<ul class="list">
+								<li>
+									<a href="#">Unlimited Space</a>
+								</li>
+								<li>
+									<a href="#">Secure Online Transfer</a>
+								</li>
+								<li>
+									<a href="#">Unlimited Styles</a>
+								</li>
+								<li>
+									<a href="#">Customer Service</a>
+								</li>
+							</ul>
+						</div>
+						<div class="price_footer">
+							<h3>
+								<span class="dlr">$</span> 0</h3>
+							<a class="primary_btn" href="#">
+								<span>Contact Us</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================End Pricing Area =================-->
+
+	<!--================Impress Area =================-->
+	<section class="impress_area">
+		<div class="container">
+			<div class="impress_inner">
+				<h2>Got Impressed to our features?</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+					aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+				<a class="primary_btn" href="#">
+					<span>Request Free Demo</span>
+				</a>
+			</div>
+		</div>
+	</section>
+	<!--================End Impress Area =================-->
+
+
+	<!--================Footer Area =================-->
+	<footer class="footer_area">
+		<div class="container">
+			<div class="row footer_inner">
+				<div class="col-lg-5 col-sm-6">
+					<aside class="f_widget ab_widget">
+						<div class="f_title">
+							<h3>About Me</h3>
+						</div>
+						<p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your
+							skills,
+						</p>
+						<p>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							Copyright &copy;
+							<script type="211f74d597f1c2a63e667f8b-text/javascript">document.write(new Date().getFullYear());</script> All rights reserved | This template is made with
+							<i class="fa fa-heart-o" aria-hidden="true"></i> by
+							<a href="https://colorlib.com" target="_blank">Colorlib</a>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						</p>
+					</aside>
+				</div>
+				<div class="col-lg-5 col-sm-6">
+					<aside class="f_widget news_widget">
+						<div class="f_title">
+							<h3>Newsletter</h3>
+						</div>
+						<p>Stay updated with our latest trends</p>
+						<div id="mc_embed_signup">
+							<form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+							 method="get" class="subscribe_form relative">
+								<div class="input-group d-flex flex-row">
+									<input name="EMAIL" placeholder="Enter email address" onfocus="if (!window.__cfRLUnblockHandlers) return false; this.placeholder = ''"
+									 onblur="if (!window.__cfRLUnblockHandlers) return false; this.placeholder = 'Email Address '" required="" type="email"
+									 data-cf-modified-211f74d597f1c2a63e667f8b-="">
+									<button class="btn sub-btn">
+										<span class="fas fa-arrow-right"></span>
+									</button>
+								</div>
+								<div class="mt-10 info"></div>
+							</form>
+						</div>
+					</aside>
+				</div>
+				<div class="col-lg-2">
+					<aside class="f_widget social_widget">
+						<div class="f_title">
+							<h3>Follow Me</h3>
+						</div>
+						<p>Let us be social</p>
+						<ul class="list">
+							<li>
+								<a href="#">
+									<i class="fab fa-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fab fa-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fab fa-github"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fab fa-youtube"></i>
+								</a>
+							</li>
+						</ul>
+					</aside>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--================End Footer Area =================-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+	 crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+	 crossorigin="anonymous"></script>
 </body>
+
 </html>
