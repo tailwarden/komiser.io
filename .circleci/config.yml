@@ -1,0 +1,16 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: node:lts
+    working_directory: ~/komiser.io
+    steps:
+      - checkout
+      - run:
+          name: Install AWS CLI
+          command: |
+            apt-get update
+            apt-get install -y awscli
+      - run:
+          name: Push to S3 bucket
+          command: aws s3 sync . s3://komiser.io
