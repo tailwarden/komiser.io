@@ -1,440 +1,412 @@
-<!doctype html>
-<html lang="en">
+<html>
 
 <head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="img/favicon.ico" type="image/png">
-	<title>Komiser - Cloud Inspector Tool</title>
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-	 crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-	 crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-	<link rel="image_src" href="https://cdn.komiser.io/images/website-thumbnail.png">
-	<!-- main css -->
-	<link rel="stylesheet" href="css/magnific-popoup.css">
-	<link rel="stylesheet" href="css/style.css">
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-57902136-18"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/png">
+    <title>Komiser - Cloud Environment Inspector</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/froala-design-blocks/2.0.0/css/froala_blocks.min.css">
 
-		gtag('config', 'UA-57902136-18');
-	</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-57902136-18"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-	<style>
-		.active-provider {
-			filter: grayscale(0%) !important;
-		}
-	</style>
+        gtag('config', 'UA-57902136-18');
+    </script>
+
+    <style>
+        .fdb-block {
+            padding-bottom: 5.5rem !important;
+            padding-top: 5.5rem !important;
+        }
+
+        .alert-success{
+            background-color: #4285F4;
+            color: white;
+            border-color: #4285F4;
+        }
+    </style>
 </head>
 
 <body>
-	<!--================Home Banner Area =================-->
-	<section class="home_banner_area">
-		<div class="banner_inner">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="banner_content" style="margin-top: 20px">
-							<div class="d-flex align-items-center float-right">
-								<a class="primary_btn" target="_blank" href="https://github.com/mlabouardy/komiser">
-									<span>
-										<i class="fab fa-github fa-lg"></i>
-										<i id="github-watchers" style="font-style:normal">250</i> STARS ON GITHUB </span>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-5">
-						<div class="banner_content">
-							<h2>
-								Komiser
-								<br>
-								<span style="font-size:30px">Cloud Environment Inspector</span>
-							</h2>
-							<p>
-								Stay under budget by uncovering hidden costs, monitoring increases in spend, and making impactful changes based on custom
-								recommendations.
-							</p>
-							<div class="d-flex align-items-center">
-								<a class="primary_btn" target="_blank" href="https://github.com/mlabouardy/komiser">
-									<span>Get Started</span>
-								</a>
-								<a id="play-home-video" class="video-play-button" target="_blank" href="https://www.youtube.com/watch?v=DDWf2KnvgE8">
-									<span></span>
-								</a>
-								<div class="watch_video text-uppercase">
-									watch the video
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-7">
-						<div class="home_right_img">
-							<img class="img-fluid" src="img/banner/home-right.png" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================End Home Banner Area =================-->
+    <header class="bg-dark" style="height:40px">
+        <div class="container text-center">
+            <a style="text-decoration: none;line-height:40px;color:white" href="https://cloud.komiser.io">
+                <i class="fa fa-rocket"></i> &nbsp;Try Komiser Entreprise Edition for
+                <strong>30 days</strong> free trial. No credit card required !</a>
+        </div>
+    </header>
 
-	<div class="section_gap_top testimonial_area">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8 text-center">
-					<div class="main_title">
-						<p class="top_title">Multi Cloud Providers</p>
-						<h2>One Tool Across Major Infrastructure Providers</h2>
-						<p>Get a deep understanding of how you spend on the AWS, GCP and Azure</p>
-					</div>
-				</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-lg-12">
-					<div class="owl-carousel brand-carousel">
-						<!-- single-brand -->
-						<div class="single-brand-item d-table">
-							<div class="d-table-cell">
-								<img src="img/brands/aws.png" class="active-provider" alt="">
-							</div>
-						</div>
-						<!-- single-brand -->
-						<div class="single-brand-item d-table">
-							<div class="d-table-cell">
-								<img src="img/brands/gcp.png" class="active-provider" alt="">
-							</div>
-						</div>
-						<div class="single-brand-item d-table">
-							<div class="d-table-cell">
-								<img src="img/brands/ovh.png" class="active-provider" alt="">
-							</div>
-						</div>
-						<!-- single-brand -->
-						<div class="single-brand-item d-table">
-							<div class="d-table-cell">
-								<img src="img/brands/azure.png" alt="">
-							</div>
-						</div>
-						<!-- single-brand -->
-						<div class="single-brand-item d-table">
-							<div class="d-table-cell">
-								<img src="img/brands/alibaba.png" alt="">
-							</div>
-						</div>
-						<!-- single-brand -->
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-md">
+                <a class="navbar-brand" href="https://komiser.io">
+                    <img src="assets/images/icon.png" height="30" alt="image">
+                </a>
 
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-	<!--================Start Big Features Area =================-->
-	<section class="section_gap big_features">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8 text-center">
-					<div class="main_title">
-						<p class="top_title">Features Specifications</p>
-						<h2>Amazing Features That make it Awesome!</h2>
-						<p>Analyze and manage cloud cost, usage, security, and governance in one place.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row features_content">
-				<div class="col-lg-4 offset-lg-1">
-					<div class="big_f_left">
-						<img class="img-fluid" src="img/cost.png" alt="">
-					</div>
-				</div>
-				<div class="col-lg-4 offset-lg-2">
-					<div class="common_style">
-						<p class="line">Cost Optimization</p>
-						<h3>Reduce the cost of your infrastructure</h3>
-						<p>Control your usage and create visibility across all used services to achieve maximum cost-effectiveness.</p>
-						<a class="primary_btn" href="https://docs.komiser.io" target="_blank">
-							<span>Learn More</span>
-						</a>
-					</div>
-				</div>
-				<div class="border-line"></div>
-				<img class="shape1" src="img/shape1.png" alt="">
-				<img class="shape2" src="img/shape2.png" alt="">
-				<img class="shape3" src="img/shape1.png" alt="">
-			</div>
+                <div class="collapse navbar-collapse" id="navbarNav1">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="https://komiser.io">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pricing">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" target="_blank" href="https://docs.komiser.io">Docs</a>
+                        </li>
+                    </ul>
 
-			<div class="row features_content bottom-features">
-				<div class="col-lg-5">
-					<div class="common_style">
-						<p class="line">GDPR-Compliant Infrastructure</p>
-						<h3>Govern a secure and compliant environment</h3>
-						<p>Detect potential vulnerabilities that could put your cloud environment at risk.</p>
-						<a class="primary_btn" href="https://docs.komiser.io" target="_blank">
-							<span>Learn More</span>
-						</a>
-					</div>
-				</div>
-				<div class="col-lg-5 offset-lg-2">
-					<div class="big_f_left">
-						<img class="img-fluid" src="img/security.png" alt="">
-					</div>
-				</div>
-				<div class="border-line"></div>
-				<img class="shape1" src="img/shape1.png" alt="">
-				<img class="shape2" src="img/shape2.png" alt="">
-				<img class="shape3" src="img/shape1.png" alt="">
-			</div>
-		</div>
-	</section>
-	<!--================End Big Features Area =================-->
+                    <ul class="navbar-nav justify-content-end d-none d-lg-flex ml-md-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/mlabouardy/komiser" target="_blank">
+                                <i class="fab fa-slack"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://twitter.com/komiseree" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.github.com/mlabouardy/komiser" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
 
-	<!--================Srart Pricing Area =================-->
-	<section class="price_area section_gap">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8 text-center">
-					<div class="main_title">
-						<p class="top_title">Pricing Plans</p>
-						<h2>All your Cloud bills under one Dashboard</h2>
-						<p>Flexible, clear pricing for modern cloud infrastructure of any scale.</p>
-					</div>
-				</div>
-			</div>
-			<div class="price_inner row justify-content-center">
-				<div class="col-lg-4 col-md-6">
-					<div class="price_item">
-						<div class="price_head">
-							<h4>Essentials</h4>
-						</div>
-						<div class="price_body">
-							<ul class="list">
-								<li>
-									<a href="#">Multiple Cloud Providers</a>
-								</li>
-								<li>
-									<a href="#">Single Account</a>
-								</li>
-								<li>
-									<a href="#">Events and Standard Recommendations</a>
-								</li>
-								<li>
-									<a href="#">Community Forum and Online Docs</a>
-								</li>
-								<li>
-									<a href="#">Product Training Videos</a>
-								</li>
-							</ul>
-						</div>
-						<div class="price_footer">
-							<h3>
-								<span class="dlr">$</span> 0</h3>
-							<a class="primary_btn" href="https://github.com/mlabouardy/komiser" target="_blank">
-								<span>Get Started</span>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="price_item">
-						<div class="price_head">
-							<h4>Enterprise</h4>
-						</div>
-						<div class="price_body">
-							<ul class="list">
-								<li>
-									<a href="#">Recommendation Engine</a>
-								</li>
+                    <a class="btn btn-outline-dark ml-md-3" href="https://cloud.komiser.io">Login</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="fdb-block">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-12 col-lg-6 col-xl-5">
+                    <h1 style="font-size: 2.15rem">Cloud Environment Inspector</h1>
+                    <p class="lead mb-5">Stay under budget by uncovering hidden costs, monitoring increases in spend, and making impactful changes
+                        based on custom recommendations..</p>
 
-								<li>
-									<a href="#">RBAC & Unlimited User Accounts</a>
-								</li>
-								<li>
-									<a href="#">Alerts</a>
-								</li>
-								<li>
-									<a href="#">Reporting</a>
-								</li>
-								<li>
-									<a href="#">Premium Support</a>
-								</li>
-							</ul>
-						</div>
-						<div class="price_footer">
-							<h3>
-								<span class="dlr" style="height:86.25px">
-							</h3>
-							<a class="primary_btn" href="mailto:contact@komiser.io">
-								<span>Contact Us</span>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================End Pricing Area =================-->
+                    <p>
+                        <strong>One tool across top public cloud providers:</strong>
+                    </p>
+                    <p class="h1 text-muted">
+                        <img alt="Amazon Web Services" class="mr-3" style="width: 45px;" src="assets/images/aws.png">
+                        <img alt="Google Cloud Platform" class="mr-3" style="width: 45px;" src="assets/images/gcp.png">
+                        <img alt="Microsoft Azure" class="mr-3" style="width: 45px;" src="assets/images/azure.png">
+                        <img alt="OVH" class="mr-3" style="width: 60px;" src="assets/images/ovh.png">
+                        <img alt="Alibaba Cloud" class="mr-3" style="width: 75px;" src="assets/images/alibaba.png">
+                    </p>
+                </div>
+                <div class="col-12 col-md-8 m-auto ml-lg-auto mr-lg-0 col-lg-6 pt-5 pt-lg-0">
+                    <img alt="image" class="img-fluid" src="assets/images/home.png">
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!--================Impress Area =================-->
-	<section class="impress_area">
-		<div class="container">
-			<div class="impress_inner">
-				<h2>Explore the premium version of Komiser ?</h2>
-				<p>The version is currently only available through the preview. Be the first to access new Komiser features.</p>
-				<a class="primary_btn" href="mailto:contact@komiser.io">
-					<span>Free Trial</span>
-				</a>
-			</div>
-		</div>
-	</section>
-	<!--================End Impress Area =================-->
+    <section class="fdb-block">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 mb-4 mb-md-0">
+                    <img alt="image" class="img-fluid" src="assets/images/opensource.png">
+                </div>
+                <div class="col-12 col-md-6 col-lg-5 ml-md-auto text-left">
+                    <h1 style="font-size: 2.25rem;">Komiser Community Edition</h1>
+                    <p class="lead">Komiser CE is a free and Open Source project with the goal to create an open cloud cost optimization
+                        project with support of all major public cloud providers.</p>
+                    <p>
+                        <a class="btn btn-secondary mt-4" href="https://github.com/mlabouardy/komiser">Download</a>
+                        <a class="btn btn-dark mt-4" href="https://github.com/mlabouardy/komiser">Contribute</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-	<!--================Footer Area =================-->
-	<footer class="footer_area">
-		<div class="container">
-			<div class="row footer_inner">
-				<div class="col-lg-5 col-sm-6">
-					<aside class="f_widget ab_widget">
-						<div class="f_title">
-							<h3>About</h3>
-						</div>
-						<p>Komiser is an AI based recommendation engine that allow you to pay only for the cloud services you need while you meet
-							your performance and capacity requirements.
-						</p>
-						<p>
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							Copyright &copy;
-							<script type="211f74d597f1c2a63e667f8b-text/javascript">document.write(new Date().getFullYear());</script> Komiser | This template is made with
-							<i class="fa fa-heart-o" aria-hidden="true"></i> by
-							<a href="https://colorlib.com" target="_blank">Colorlib</a>
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						</p>
-					</aside>
-				</div>
-				<div class="col-lg-5 col-sm-6">
-					<aside class="f_widget news_widget">
-						<div class="f_title">
-							<h3>Newsletter</h3>
-						</div>
-						<p>Stay updated with our latest features</p>
-						<div id="mc_embed_signup">
-							<div target="_blank" class="subscribe_form relative">
-								<div class="input-group d-flex flex-row">
-									<input name="EMAIL" id="email" placeholder="Enter email address" onfocus="if (!window.__cfRLUnblockHandlers) return false; this.placeholder = ''"
-									 onblur="if (!window.__cfRLUnblockHandlers) return false; this.placeholder = 'Email Address '" required="" type="email"
-									 data-cf-modified-211f74d597f1c2a63e667f8b-="">
-									<button class="btn sub-btn" onclick="submitform()">
-										<span class="fas fa-arrow-right"></span>
-									</button>
-								</div>
-								<div class="mt-10 info"></div>
-							</div>
-						</div>
-					</aside>
-				</div>
-				<div class="col-lg-2">
-					<aside class="f_widget social_widget">
-						<div class="f_title">
-							<h3>Follow Us</h3>
-						</div>
-						<p>Let us be social</p>
-						<ul class="list">
-							<li>
-								<a href="#">
-									<i class="fab fa-linkedin"></i>
-								</a>
-							</li>
-							<li>
-								<a href="https://twitter.com/komiseree" target="_blank">
-									<i class="fab fa-twitter"></i>
-								</a>
-							</li>
-							<li>
-								<a href="https://github.com/mlabouardy/komiser" target="_blank">
-									<i class="fab fa-github"></i>
-								</a>
-							</li>
-							<li>
-								<a href="https://komiser.slack.com/messages/C9SQPU4Q0/" target="_blank">
-									<i class="fab fa-slack-hash"></i>
-								</a>
-							</li>
-						</ul>
-					</aside>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!--================End Footer Area =================-->
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-	 crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-	 crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-	<script>
-		$('.owl-carousel').owlCarousel({
-			loop: true,
-			margin: 10,
-			nav: false,
-			responsive: {
-				0: {
-					items: 1
-				},
-				600: {
-					items: 3
-				},
-				1000: {
-					items: 5
-				}
-			}
-		})
-	</script>
-	<script src="js/magnific.js"></script>
-	<script src="js/main.js"></script>
-	<script src="https://cdn.komiser.io/js/plugin/bootstrap-notify/bootstrap-notify.min.js">
-	</script>
-	<script src="https://cdn.jsdelivr.net/npm/producthunt-floating-prompt/lib/producthunt-floating-prompt.min.js"></script>
-	<script>
-		function submitform() {
-			console.log('hello')
-			$.ajax({
-				type: "POST",
-				url: "https://ju21o0v5c3.execute-api.eu-west-3.amazonaws.com/production/newsletters/subscribe",
-				data: JSON.stringify({ email: $('#email').val() }),
-				error: function (data) {
-					$('#email').val('');
-					$.notify({
-						icon: 'la la-bell',
-						title: 'Komiser',
-						message: 'Thank you for subscribing !',
-					}, {
-							type: 'success',
-							placement: {
-								from: "bottom",
-								align: "right"
-							},
-							time: 20000,
-						});
 
-				},
-				crossDomain: true,
-				contentType: "application/json"
-			});
-		}
-		FloatingPrompt({ name: 'Komiser', url: 'https://www.producthunt.com/posts/komiser', width: '350px' });
-	</script>
+    <section class="fdb-block">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-7 col-lg-5 ml-md-auto">
+                    <h1>Love it? Grow it!</h1>
+                    <p class="lead">In the last months, we’ve more than doubled our OSS downloads and expanded our community footprint. This
+                        is possible because the tool work, solve real problems, and is embraced by end users. Some of our
+                        users include:</p>
+
+                    <p class="mt-5">
+                        <img alt="image" height="35" class="mr-4" src="assets/images/numerix.png">
+                        <img alt="image" height="21" class="mr-4" src="assets/images/globalreach.png">
+                        <img alt="image" height="26" src="assets/images/ticketguardian.png">
+                    </p>
+                </div>
+
+                <div class="col-10 col-sm-6 col-md-5 col-lg-4 m-auto pt-5 pt-md-0">
+                    <img alt="image" class="img-fluid rounded-0" src="assets/images/monitoring.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fdb-block" id="features">
+        <div class="container">
+            <div class="row text-left align-items-center">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h2 style="font-size: 1.5rem;">Cost Optimization</h2>
+                    <p class="lead">Control your usage and create visibility across all used services to achieve maximum cost-effectiveness.</p>
+                    <p class="lead">
+                        <a href="https://docs.komiser.io">Learn More</a>
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 pt-4 pt-md-0">
+                    <h2 style="font-size: 1.5rem;">GDPR-Compliant Infrastructure</h2>
+                    <p class="lead">Govern a secure and compliant environment by detecting potential vulnerabilities that could put your
+                        cloud environment at risk.</p>
+                    <p class="lead">
+                        <a href="https://docs.komiser.io">Learn More</a>
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-8 m-auto m-lg-0 col-lg-4 pt-5 pt-lg-0">
+                    <img alt="image" class="img-fluid" src="assets/images/security.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fdb-block" id="pricing" style="background-image: url(imgs/shapes/8.svg);">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <h1>Pricing Plans</h1>
+                </div>
+            </div>
+
+            <div class="row mt-5 align-items-center no-gutters">
+                <div class="col-12 col-sm-10 col-md-8 m-auto col-lg-4 text-center shadow">
+                    <div class="bg-white pb-5 pt-5 pl-4 pr-4 rounded-left">
+                        <h2 class="font-weight-light">Essentials</h2>
+
+                        <p class="h1 mt-5 mb-5">
+                            <strong>Free</strong>
+                        </p>
+
+                        <ul class="text-left">
+                            <li>Open source</li>
+                            <li>Multiple cloud providers</li>
+                            <li>Cost forecast computation</li>
+                            <li>Single user</li>
+                            <li>Basic recommendations</li>
+                        </ul>
+
+                        <p class="text-center pt-4">
+                            <a href="https://github.com/mlabouardy/komiser" class="btn btn-outline-dark">Get Started</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-10 col-md-8 ml-auto mr-auto col-lg-4 text-center mt-4 mt-lg-0 sl-1 pt-0 pt-lg-3 pb-0 pb-lg-3 bg-white fdb-touch rounded shadow">
+                    <div class="pb-5 pt-5 pl-4 pr-4">
+                        <h2 class="font-weight-light">Business</h2>
+
+                        <p class="h1 mt-5 mb-5">
+                            <strong>$169</strong>
+                            <span class="h4">/month</span>
+                        </p>
+
+                        <ul class="text-left">
+                            <li>Unlimited cloud accounts</li>
+                            <li>Unlimited users</li>
+                            <li>Advanced cost breakdown</li>
+                            <li>Recommendation Engine</li>
+                            <li>Alerting & reporting</li>
+                            <li>Early access to features</li>
+                            <li>Support</li>
+                        </ul>
+
+                        <p class="text-center pt-4">
+                            <a href="https://cloud.komiser.io" class="btn btn-primary btn-shadow">Start Free Trial</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-10 col-md-8 ml-auto mr-auto col-lg-4 text-center mt-4 mt-lg-0 shadow">
+                    <div class="bg-white pb-5 pt-5 pl-4 pr-4 rounded-right">
+                        <h2 class="font-weight-light">Entreprise</h2>
+
+                        <p class="h1 mt-5 mb-5">
+                            <strong>Call us</strong>
+                        </p>
+
+                        <ul class="text-left">
+                            <li>All the business features</li>
+                            <li>Dedicated hosting</li>
+                            <li>Advanced consulting</li>
+                            <li>API access</li>
+                            <li>24/7 support</li>
+                        </ul>
+
+                        <p class="text-center pt-4">
+                            <a href="mailto:contact@komiser.io" class="btn btn-outline-dark">Contact</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fdb-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 m-md-auto ml-lg-0 col-lg-5">
+                    <img alt="image" class="img-fluid" src="assets/images/group-chat.svg">
+                </div>
+                <div class="col-12 col-md-10 col-lg-6 mt-4 mt-lg-0 ml-auto mr-auto ml-lg-auto text-left">
+                    <div class="row">
+                        <div class="col">
+                            <h1>Stay in touch</h1>
+                            <p class="lead">Subscribe to receive email notifications about new features and new releases for Komiser CE/EE.</p>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col">
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="email"  placeholder="Enter your email address">
+                                <div class="input-group-append">
+                                    <button class="btn btn-dark" onclick="submitform()" type="button">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <p class="h4">* Leave your email address to be notified first.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="fdb-block footer-large">
+        <div class="container">
+            <div class="row align-items-top text-center">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-sm-left">
+                    <h3>
+                        <strong>Company</strong>
+                    </h3>
+                    <nav class="nav flex-column">
+                        <a class="nav-link active" href="https://komiser.io">Home</a>
+                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="https://medium.com/komiser">Blog</a>
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </nav>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-5 mt-sm-0 text-sm-left">
+                    <h3>
+                        <strong>Resources</strong>
+                    </h3>
+                    <nav class="nav flex-column">
+                        <a class="nav-link active" href="#">Privacy Policy</a>
+                        <a class="nav-link" href="#">Terms</a>
+                        <a class="nav-link" href="#">FAQ</a>
+                        <a class="nav-link" href="#">Support</a>
+                    </nav>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3 text-md-left mt-5 mt-md-0">
+                    <h3>
+                        <strong>About Us</strong>
+                    </h3>
+                    <p>Cloud environment inspector that inspect the customer's cloud infrastructure and identify potential cost savings by uncovering unefficient usage of cloud resources.</p>
+                </div>
+
+                <div class="col-12 col-lg-2 ml-auto text-lg-left mt-4 mt-lg-0">
+                    <h3>
+                        <strong>Follow Us</strong>
+                    </h3>
+                    <p class="lead">
+                        <a href="https://twitter.com/komiseree" class="mx-2">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.facebook.com/Komiser-351725519067928" class="mx-2">
+                            <i class="fab fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.instagram.com/komiseree/" class="mx-2">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/mlabouardy/" class="mx-2">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col text-center">
+                    © 2019 Komiser. All Rights Reserved
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+<script src="https://cdn.komiser.io/js/plugin/bootstrap-notify/bootstrap-notify.min.js">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/producthunt-floating-prompt/lib/producthunt-floating-prompt.min.js"></script>
+<script>
+    function submitform() {
+        console.log('hello')
+        $.ajax({
+            type: "POST",
+            url: "https://ju21o0v5c3.execute-api.eu-west-3.amazonaws.com/production/newsletters/subscribe",
+            data: JSON.stringify({ email: $('#email').val() }),
+            error: function (data) {
+                $('#email').val('');
+                $.notify({
+                    icon: 'la la-bell',
+                    title: 'Komiser',
+                    message: 'Thank you for subscribing !',
+                }, {
+                        type: 'success',
+                        placement: {
+                            from: "bottom",
+                            align: "right"
+                        },
+                        time: 800000,
+                    });
+
+            },
+            crossDomain: true,
+            contentType: "application/json"
+        });
+    }
+    FloatingPrompt({ name: 'Komiser', url: 'https://www.producthunt.com/posts/komiser', width: '350px' });
+</script>
 
 </html>
