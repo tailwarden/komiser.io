@@ -1,0 +1,23 @@
+{
+  "name": "komiser.io",
+  "version": "1.1.0",
+  "description": "Komiser landing page",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/komiserio/komiser.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/komiserio/komiser.io/issues"
+  },
+  "homepage": "https://github.com/komiserio/komiser.io#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-webserver": "^0.9.1"
+  }
+}
