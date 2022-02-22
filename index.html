@@ -26,7 +26,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link type="text/css" rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/froala-design-blocks/2.0.0/css/froala_blocks.min.css">
 
@@ -55,6 +57,13 @@
 </head>
 
 <body>
+    <header class="bg-dark" style="height:40px">
+        <div class="container text-center">
+            <a style="text-decoration: none;line-height:40px;color:white" href="https://cloud.komiser.io">
+                📢 We are super excited to announce Microsoft Azure support! Try <a
+                    href="https://cloud.komiser.io">Komiser EE</a> for free!
+        </div>
+    </header>
 
     <header>
         <div class="container">
@@ -88,17 +97,15 @@
 
                     <ul class="navbar-nav justify-content-end d-none d-lg-flex ml-md-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="https://community.komiser.io" target="_blank">
+                            <a class="nav-link"
+                                href="https://join.slack.com/t/komiser/shared_invite/zt-141wqevac-mjY6psVrChaf0EUGryHJjA"
+                                target="_blank" style="    font-size: 1.5rem;">
                                 <i class="fab fa-slack"></i>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://twitter.com/komiseree" target="_blank">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.github.com/mlabouardy/komiser" target="_blank">
+                            <a class="nav-link" href="https://www.github.com/mlabouardy/komiser" target="_blank"
+                                style="    font-size: 1.5rem;">
                                 <i class="fab fa-github"></i>
                             </a>
                         </li>
@@ -120,19 +127,18 @@
                         based on custom recommendations.</p>
 
                     <p>
-                        <a class="btn btn-primary btn-shadow" href="https://cloud.komiser.io">Start Free Trial</a>
+                        <a class="btn btn-primary btn-shadow" href="https://cloud.komiser.io">Get Started</a>
                     </p>
 
                     <p>
                         <strong>One tool across top public cloud providers:</strong>
                     </p>
                     <p class="h1 text-muted">
-                        <img alt="Amazon Web Services" class="mr-3" style="width: 45px;" src="assets/images/aws.png">
-                        <img alt="Google Cloud Platform" class="mr-3" style="width: 45px;" src="assets/images/gcp.png">
-                        <img alt="Microsoft Azure" class="mr-3" style="width: 45px;" src="assets/images/azure.png">
-                        <img alt="OVH" class="mr-3" style="width: 60px;" src="assets/images/ovh.png">
-                        <img alt="DigitalOcean" class="mr-3" style="width: 45px;filter: grayscale(1);"
-                            src="https://cdn.komiser.io/images/digitalocean.png">
+                        <img alt="Amazon Web Services" class="mr-3" style="height: 32px;" src="assets/images/aws.png">
+                        <img alt="Google Cloud Platform" class="mr-3" style="height: 35px;" src="assets/images/gcp.png">
+                        <img alt="Microsoft Azure" class="mr-3" style="height: 35px;" src="assets/images/azure.svg">
+                        <img alt="OVH" class="mr-3" style="height: 35px;" src="assets/images/ovh.png">
+                        <img alt="DigitalOcean" class="mr-3" style="height: 40px;" src="assets/images/digitalocean.svg">
                     </p>
                 </div>
                 <div class="col-12 col-md-8 m-auto ml-lg-auto mr-lg-0 col-lg-6 pt-5 pt-lg-0">
@@ -326,7 +332,6 @@
                         <a class="nav-link" href="#">Features</a>
                         <a class="nav-link" href="#">Pricing</a>
                         <a class="nav-link" href="https://medium.com/komiser">Blog</a>
-                        <a class="nav-link" href="#">Contact Us</a>
                     </nav>
                 </div>
 
@@ -337,8 +342,8 @@
                     <nav class="nav flex-column">
                         <a class="nav-link active" href="#">Privacy Policy</a>
                         <a class="nav-link" href="#">Terms</a>
-                        <a class="nav-link" href="#">FAQ</a>
-                        <a class="nav-link" href="#">Support</a>
+                        <a class="nav-link" href="https://docs.komiser.io">Docs</a>
+                        <a class="nav-link" href="https://headwayapp.co/komiser-ee-changelog">Changelog</a>
                     </nav>
                 </div>
 
@@ -358,11 +363,9 @@
                         <a href="https://twitter.com/komiseree" class="mx-2">
                             <i class="fab fa-twitter" aria-hidden="true"></i>
                         </a>
-                        <a href="https://community.komiser.io" class="mx-2">
+                        <a href="https://join.slack.com/t/komiser/shared_invite/zt-141wqevac-mjY6psVrChaf0EUGryHJjA"
+                            class="mx-2">
                             <i class="fab fa-slack" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://www.instagram.com/komiseree/" class="mx-2">
-                            <i class="fab fa-instagram" aria-hidden="true"></i>
                         </a>
                         <a href="https://linkedin.com/in/mlabouardy/" class="mx-2">
                             <i class="fab fa-linkedin" aria-hidden="true"></i>
@@ -373,7 +376,7 @@
 
             <div class="row mt-3">
                 <div class="col text-center">
-                    © 2021 Komiser. All Rights Reserved
+                    © 2022 Komiser. All Rights Reserved
                 </div>
             </div>
         </div>
@@ -383,6 +386,9 @@
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://cdn.komiser.io/js/plugin/bootstrap-notify/bootstrap-notify.min.js">
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"
+    integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/producthunt-floating-prompt/lib/producthunt-floating-prompt.min.js"></script>
 <script>
     function submitform() {
